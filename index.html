@@ -7,70 +7,72 @@
     <title>Lab - Using HTML with Version Control</title>
 </head>
 <body>
-<center>
-    <h1>Aaron Nicor's Website</h1>
-    <nav> 
-        <a href=#about>About Me</a> | 
-        <a href=#Hobbies>Hobbies</a> | 
-        <a href=#Goals>Goals</a> | 
-        <a href=#Movies>Favorite Movies</a> 
-    </nav>
+    <div class="container">
+        <h1>Aaron Nicor's Website</h1>
+        <nav> 
+            <a href="#about">About Me</a> | 
+            <a href="#hobbies">Hobbies</a> | 
+            <a href="#goals">Goals</a> | 
+            <a href="#movies">Favorite Movies</a> 
+        </nav>
 
-    <p>This website will showcase my personal interests and work.</p>
-<!-- About Me-->
-<section> 
-        <h2 id="about">About Me</h2>
-<table>
-        <tr>
-          <th>Age</th>
-          <th>Ethnicity</th>
-          <th>Nationality</th>
-        </tr>
-        <tr>
-          <td>19</td>
-          <td>Filipino</td>
-          <td>Canadian</td>
-        </tr>
-      </table>        
-    <p>Hi! My name is Aaron, I'm currently enrolled in SAIT's Interactive Design Diploma. 
-    My major is <strong>UX Design.</strong> I was born and raised in Calgary, Alberta while being a descendant of Filipino heritage. I'm eager to form connections with people and learn from their experiences. If you ever see me, don't hesitate to chat!</p>
-    
-</section>
-<!--Hobbies-->
-<section> 
-        <h2 id="hobbies">Hobbies</h2>
-    <p>My current hobbies include watching movies and shows, competing on the SAIT Valorant team, and going to the gym!</p>
-</section>    
-<!--Goals-->
-<section> 
-        <h2 id="Goals">Goals</h2>
-    <p>My current goals that I have set for myself after I graduate from SAIT are landing a job in the UX field, start live streaming as a hobby on twitch and to get my bread up. </p>
-</section>    
-<!--Favorite Movies-->
-<section>
-        <h2 id="Movies">Favorite Movies</h2>
-        <h3>My <a href="https://letterboxd.com/AaronNic/">Letterboxd</a></h3>
-        <h4>These are my current Favorite Movies according to my Letterboxd</h4>
-        <ol type="1">
-    <li>When Harry Met Sally</li>
-    <li>My Neighbor Totoro</li>
-    <li>Your Name</li>
-    <li>How The Grinch Stole Christmas</li>
-        </ol>
-<!-- Below is "When Harry Met Sally" Movie Poster-->
-        <img src="https://m.media-amazon.com/images/M/MV5BMjE0ODEwNjM2NF5BMl5BanBnXkFtZTcwMjU2Mzg3NA@@._V1_FMjpg_UX1000_.jpg" height="200" width="150" alt="When Harry Met Sally movie poster">
-<!--"My Neighbor Totoro" Movie Poster-->
-        <img src="https://m.media-amazon.com/images/M/MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" height="200" width="150" alt="My Neighbor Totoro movie poster">
-<!--Your Name Movie Poster-->
-        <img src="https://dglibrary.org/wp-content/uploads/2021/04/71-WBN3FCBL._AC_SL1280_.jpg" height="200" width="150" alt="Your Name movie poster"> 
-<!--How The Grinch Stole Christmas Movie Poster-->
-        <img src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" height="200" width="150" alt="How The Grinch Stole Christmas movie poster">
+        <p>This website will showcase my personal interests and work.</p>
 
-</section>
-</center>
-<footer>
-    &copy; Aaron Nicor 2023
-    <p>Contact me via <a href="https://www.linkedin.com/in/aaron-nicor/">Linkedin</a></p>
-</footer>    
+        <!-- About Me-->
+        <section class="about-section"> 
+            <h2 id="about">About Me</h2>
+            <table>
+                <tr>
+                    <th>Age</th>
+                    <th>Ethnicity</th>
+                    <th>Nationality</th>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Filipino</td>
+                    <td>Canadian</td>
+                </tr>
+            </table>
+            <p>Hi! My name is Aaron, I'm currently enrolled in SAIT's Interactive Design Diploma. 
+            My major is <strong>UX Design.</strong> I was born and raised in Calgary, Alberta while being a descendant of Filipino heritage. I'm eager to form connections with people and learn from their experiences. If you ever see me, don't hesitate to chat!</p>
+        </section>
+
+        <!-- Hobbies-->
+        <section class="hobbies-section"> 
+            <h2 id="hobbies">Hobbies</h2>
+            <p>My current hobbies include watching movies and shows, competing on the SAIT Valorant team, and going to the gym!</p>
+        </section>    
+
+        <!-- Goals-->
+        <section class="goals-section"> 
+            <h2 id="goals">Goals</h2>
+            <p>My current goals that I have set for myself after I graduate from SAIT are landing a job in the UX field, start live streaming as a hobby on Twitch, and to get my bread up.</p>
+        </section>    
+
+        <!-- Favorite Movies-->
+        <section class="movies-section">
+            <h2 id="movies">Favorite Movies</h2>
+            <h3>My <a href="https://letterboxd.com/AaronNic/">Letterboxd</a></h3>
+            <h4>These are my current Favorite Movies according to my Letterboxd</h4>
+            <ol type="1">
+                <li>When Harry Met Sally</li>
+                <li>My Neighbor Totoro</li>
+                <li>Your Name</li>
+                <li>How The Grinch Stole Christmas</li>
+            </ol>
+            <!-- Movie Posters -->
+            <div class="movie-posters">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjE0ODEwNjM2NF5BMl5BanBnXkFtZTcwMjU2Mzg3NA@@._V1_FMjpg_UX1000_.jpg" height="200" width="150" alt="When Harry Met Sally movie poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" height="200" width="150" alt="My Neighbor Totoro movie poster">
+                <img src="https://dglibrary.org/wp-content/uploads/2021/04/71-WBN3FCBL._AC_SL1280_.jpg" height="200" width="150" alt="Your Name movie poster"> 
+                <img src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" height="200" width="150" alt="How The Grinch Stole Christmas movie poster">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; Aaron Nicor 2023
+        <p>Contact me via <a href="https://www.linkedin.com/in/aaron-nicor/">LinkedIn</a></p>
+    </footer>
 </body>
 </html>

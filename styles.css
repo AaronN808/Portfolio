@@ -6,5 +6,96 @@ table, th, td {
 
     background-color:slategray;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    color: #ffffff;
   }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #023a59; /* Background color for the navigation bar */
+    padding: 10px; /* Add some padding for better appearance */
+}
+
+nav a {
+    color: white; /* Text color for the links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Add some spacing between the links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #5a6274;
+  color: white;
+}
+
+h2 {
+  color: #333;
+}
+
+h3 {
+  color: #333;
+  margin-top: 20px;
+}
+
+h4 {
+  color: #333;
+}
+
+ol {
+  margin-left: 20px;
+}
+
+.movie-posters {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
