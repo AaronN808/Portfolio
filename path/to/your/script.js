@@ -38,7 +38,7 @@ function incrementCounter() {
     count++;
     counterParagraph.innerHTML = 'Likes: ' + count;
 
-    // Text Color Increment Addition
+    // Counter Button Cutoff
 
     if (count % 2 === 0) {
         counterButton.classList.remove('odd');
@@ -50,3 +50,17 @@ function incrementCounter() {
 }
 
 counterButton.addEventListener('click', incrementCounter);
+
+// Text Color Addition Cutoff
+
+var numbersList = document.getElementById('numbers');
+
+for (let i = 1; i <= 100; i++) {
+    var listItem = document.createElement('li');
+    
+    listItem.textContent = i % 2 === 0 ? 'even' : 'odd';
+    
+    numbersList.appendChild(listItem);
+}
+
+// Ordered List Cutoff
