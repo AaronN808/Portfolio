@@ -42,3 +42,11 @@ function incrementCounter() {
 counterButton.addEventListener('click', incrementCounter);
 
 // Increment Button Cutoff
+
+if (count % 2 === 0) {
+    counterButton.classList.remove('odd');
+    counterButton.classList.add('even');
+} else {
+    counterButton.classList.remove('even');
+    counterButton.classList.add('odd');
+}
