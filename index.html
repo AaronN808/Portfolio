@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab - Using HTML with Version Control</title>
+    <script defer src="path/to/your/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -67,11 +68,15 @@
                 <img src="https://dglibrary.org/wp-content/uploads/2021/04/71-WBN3FCBL._AC_SL1280_.jpg" height="200" width="150" alt="Your Name movie poster"> 
                 <img src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" height="200" width="150" alt="How The Grinch Stole Christmas movie poster">
             </div>
+            <button id="btn-alert">Click me!</button>
+            <button id="btn-counter" class="odd">Click this button to like the page!</button>
+            <p id="txt-counter">Likes: 1</p>
+            <ol id="numbers"></ol>
         </section>
     </div>
 
     <footer>
-        &copy; Aaron Nicor 2023
+        &copy; <span id="currentYear">2023</span> Aaron Nicor
         <p>Contact me via <a href="https://www.linkedin.com/in/aaron-nicor/">LinkedIn</a></p>
     </footer>
 </body>
