@@ -1,6 +1,7 @@
 var currentYearElement = document.getElementById('currentYear');
 currentYearElement.innerHTML = new Date().getFullYear();
 
+// Date Cutoff
 function showAlert() {
     alert('When Harry Met Sally is my current favorite movie!');
 }
@@ -25,3 +26,19 @@ function showAlert() {
 }
 
 alertButton.addEventListener('click', showAlert);
+
+// Alert and Hover Button Cutoff
+
+var counterButton = document.getElementById('btn-counter');
+var counterParagraph = document.getElementById('txt-counter');
+
+var count = 1;
+
+function incrementCounter() {
+    count++;
+    counterParagraph.innerHTML = 'Likes:' + count;
+}
+
+counterButton.addEventListener('click', incrementCounter);
+
+// Increment Button Cutoff
