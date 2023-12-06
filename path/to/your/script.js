@@ -36,17 +36,17 @@ var count = 1;
 
 function incrementCounter() {
     count++;
-    counterParagraph.innerHTML = 'Likes:' + count;
+    counterParagraph.innerHTML = 'Likes: ' + count;
+
+    // Text Color Increment Addition
+
+    if (count % 2 === 0) {
+        counterButton.classList.remove('odd');
+        counterButton.classList.add('even');
+    } else {
+        counterButton.classList.remove('even');
+        counterButton.classList.add('odd');
+    }
 }
 
 counterButton.addEventListener('click', incrementCounter);
-
-// Increment Button Cutoff
-
-if (count % 2 === 0) {
-    counterButton.classList.remove('odd');
-    counterButton.classList.add('even');
-} else {
-    counterButton.classList.remove('even');
-    counterButton.classList.add('odd');
-}
