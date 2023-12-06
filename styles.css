@@ -135,3 +135,10 @@ footer {
   width: 100%;
 }
 
+.even {
+  color:green;
+}
+
+.odd {
+  color: blue;
+}
